@@ -2,6 +2,10 @@ package Task2;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Cafe cafe = new Cafe();
+        cafe.loadMenuData();
+        for(String coffee : cafe.getCoffeeMenu()) {
+            System.out.println(cafe.getCoffeeMenu());
+        }
     }
 }
